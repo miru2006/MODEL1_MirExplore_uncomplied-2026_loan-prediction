@@ -1,0 +1,37 @@
+
+
+LOAN APPROVAL PREDICTION SYSTEM
+REQUIREMENTS FILE
+1.This project is a machine learning based Loan Approval Prediction System. It is designed to predict whether a loan application is likely to be approved or rejected by learning from previously available loan application data.
+The dataset contains applicant details such as annual income, credit score, loan amount, years employed, and points. These details are used as input features for training the machine 2.learning model. The loan_approved column is used as the target value, which represents whether the previous application was approved or rejected.
+Logistic Regression is used as the main machine learning algorithm in this project. It is suitable for this problem because the prediction has two possible outcomes: Loan Approved or Loan Rejected.
+3.The dataset is divided into training and testing portions using train_test_split. The training data is used to teach the model, while the testing data is used to check how well the model performs on unseen data. The accuracy_score function is used to measure the prediction accuracy of the model.
+4.After the model is trained, the user can enter details of a new applicant, including annual income, credit score, loan amount, years employed, and points. The trained model then processes these values and provides a predicted loan approval result.
+5.The following Python libraries are required to run this project.
+Pandas is used to read the loan approval CSV file and handle the dataset. It also helps in selecting the required columns and preparing the input and target data for machine learning.
+pandas>=2.0.0
+Scikit-learn is used for the complete machine learning process in this project. It provides the train_test_split function for dividing the dataset, LogisticRegression for building and training the prediction model, and accuracy_score for evaluating the model performance.
+scikit-learn>=1.3.0
+PROJECT REQUIREMENTS
+Python 3.9 or above is recommended for running the project.
+The project requires the loan_approval.csv dataset to be available in the same working directory as the Python program when running it locally.
+The required input features are income, credit_score, loan_amount, years_employed, and points.
+The target column used for prediction is loan_approved.
+The model is trained using Logistic Regression with a maximum iteration limit of 1000.
+The dataset is divided into 80 percent training data and 20 percent testing data.
+The final output displays the model accuracy and the predicted result for the new applicant.
+
+PROJECT WORKFLOW
+The loan approval dataset is first loaded using Pandas.
+The required applicant information is selected from the dataset.
+The loan approval status is converted into numerical values so that it can be used by the machine learning model.
+The dataset is divided into training and testing data.
+The Logistic Regression model is trained using the training data.
+The model makes predictions using the testing data.
+The accuracy of the model is calculated using the actual and predicted results.
+The user then enters details for a new applicant.
+The trained model uses the entered information to predict whether the loan application is likely to be approved or rejected.
+INSTALLATION
+The required libraries can be installed using the following command:
+pip install pandas scikit-learn
+This requirements file contains the Python dependencies needed for the current version of the Loan Approval Prediction System.
